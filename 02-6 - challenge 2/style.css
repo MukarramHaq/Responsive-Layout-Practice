@@ -35,15 +35,13 @@ h1 {
     width: 80%;
     max-width: 1100px;
     margin: 0 auto;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: space-between;
 }
 
 .row {
     /* display: flex => flex container */
     display: flex;
     justify-content: space-between;
+    
     /* can't use yet */
     /* gap: 100px; */
 }
@@ -63,33 +61,23 @@ h1 {
     color: #FFF;
 }
 
-.hero__text { 
+main{
+    margin-top: 3rem;
+}
+
+.hero__text,
+.main-content { 
     width: 62%;
-    max-width: 100%;
 }
 
-.hero__text h2{
-    color:#136C72;
-}
-
-.hero__image {
+.hero__image,
+.side-content {
     width: 32%;
-    max-width: 100%;
-    text-align: center;
-    /* align-self: flex-start; */
+    align-self: flex-start;
 }
 
 .hero p {
     margin-bottom: 3em;
-}
-
-.hero__text-2 {
-    width: 32%;
-    max-width: 100%;
-    text-align: center;
-    background-color: #136C72;
-    color: #fff;
-    /* align-self: flex-start; */
 }
 
 .btn {
@@ -106,4 +94,10 @@ h1 {
 .btn:hover,
 .btn:focus {
     opacity: .75; 
+}
+
+.side-content{
+    text-align: center;
+    background-color: #136c72;
+    color: #fff;
 }

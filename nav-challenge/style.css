@@ -73,19 +73,30 @@ header {
     padding: .5em 0;
 }
 
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1; /* Solved the space between the logo and the nav__list--primary-content */
+}
+
 .nav__list {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
-    gap: 3rem; /* We can do this to put a gap */
+    align-items: center;
+    /*gap: 3rem; We can do this to put a gap*/
 }
 
-/* .nav__item{
-    margin-right: 2rem;  /*or we can do this
+.nav__item + .nav__item{
+    margin-left: 2rem;  /*or we can do this
     but we cannot put the gap property over here and it won't work because .nav__item is not a flex container
-    gap property only works with flex containers and grid containers.
-} */
+    gap property only works with flex containers and grid containers.*/
+} 
+
+.nav__list--content-primary{
+    margin: 0 auto;
+}
 
 .nav__link {
     color: #fff;

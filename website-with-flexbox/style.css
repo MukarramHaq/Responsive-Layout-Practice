@@ -1,0 +1,67 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* * {
+    margin: 0;
+    font: inherit;
+  } */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.hero{
+    min-height: 660px;
+    background-color: #F3EED9;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.row{
+    text-align: center;
+    width: 73%;
+    margin: 0 auto;
+    line-height: 1;
+}
+
+.container__text p {
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 18px;
+}
+
+h1{
+    font-family: Playfair Display, sans-serif;
+    font-size: 60px;
+    color: #824936;
+}
+
+h2 {
+    font-family: Playfair Display, sans-serif;
+    color: #824936;
+    text-align: center;
+    font-size: 36px;
+}
+
+.secondary-text{
+    display: flex;
+    gap: 3rem;
+}
+
+.container__changes{
+    background-color: #222C2A;
+}
